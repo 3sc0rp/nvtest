@@ -1,0 +1,81 @@
+<<<<<<< HEAD
+{
+  "name": "nature-village-website",
+  "version": "1.0.0",
+  "description": "Enhanced Nature Village Kurdish Restaurant Website",
+  "main": "nature-village-website.tsx",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "lucide-react": "^0.263.1",
+    "next": "^13.4.19",
+    "@types/react": "^18.2.21",
+    "@types/react-dom": "^18.2.7",
+    "@types/node": "^20.5.0",
+    "typescript": "^5.1.6",
+    "tailwindcss": "^3.3.3",
+    "autoprefixer": "^10.4.15",
+    "postcss": "^8.4.28"
+  },
+  "devDependencies": {
+    "eslint": "^8.47.0",
+    "eslint-config-next": "^13.4.19"
+  },
+  "keywords": [
+    "restaurant",
+    "kurdish",
+    "food",
+    "website",
+    "react",
+    "nextjs"
+  ],
+  "author": "Nature Village Restaurant",
+  "license": "MIT"
+}
+=======
+{
+  "name": "nature-village-website",
+  "version": "1.0.0",
+  "description": "Enhanced Nature Village Kurdish Restaurant Website",
+  "main": "nature-village-website.tsx",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "lucide-react": "^0.263.1",
+    "next": "^13.4.19",
+    "@types/react": "^18.2.21",
+    "@types/react-dom": "^18.2.7",
+    "@types/node": "^20.5.0",
+    "typescript": "^5.1.6",
+    "tailwindcss": "^3.3.3",
+    "autoprefixer": "^10.4.15",
+    "postcss": "^8.4.28"
+  },
+  "devDependencies": {
+    "eslint": "^8.47.0",
+    "eslint-config-next": "^13.4.19"
+  },
+  "keywords": [
+    "restaurant",
+    "kurdish",
+    "food",
+    "website",
+    "react",
+    "nextjs"
+  ],
+  "author": "Nature Village Restaurant",
+  "license": "MIT"
+}
+>>>>>>> a1d94ae29a4b8baca794abf8399e7abc65e78f4b
