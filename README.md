@@ -1,152 +1,260 @@
-# Nature Village Restaurant - Enhanced Website
+# Nature Village - Kurdish Restaurant Website
 
-## 🚀 Overview
+A production-ready, mobile-first restaurant website for "Nature Village," a Kurdish restaurant, powered by Blunari with a feature called MenuIQ (AI-integrated dynamic menu).
 
-This is an enhanced version of the Nature Village Kurdish Restaurant website that outperforms top restaurants like delbaratl.com and divanatlanta.com. The website features modern design, advanced functionality, and exceptional user experience.
+## 🚀 Features
 
-## ✨ Key Enhancements
+- **Next.js 14+ (App Router)** with TypeScript
+- **Tailwind CSS** with custom Kurdish-inspired color palette
+- **Internationalization** - English ↔ Kurdish (Sorani) with RTL support
+- **MenuIQ** - AI-powered dynamic menu recommendations
+- **Responsive Design** - Mobile-first approach
+- **Accessibility** - WCAG compliant with keyboard navigation
+- **Performance** - Optimized for Lighthouse scores > 90
+- **SEO** - Complete metadata and Schema.org markup
 
-### 🎯 Performance & User Experience
-- **Dynamic Hero Section**: Auto-rotating background images with user controls
-- **Advanced Search**: Real-time menu search with multilingual support
-- **Shopping Cart**: Full e-commerce functionality with quantity management
-- **Reservation System**: Integrated booking modal with form validation
-- **Responsive Design**: Mobile-first approach with touch-friendly interactions
+## 🎨 Design System
 
-### 🍽️ Menu & Ordering
-- **AI-Powered Recommendations**: Smart suggestions for each dish
-- **Nutrition Information**: Detailed nutritional data for health-conscious customers
-- **Allergen Warnings**: Clear allergen information for safety
-- **Favorites System**: Save favorite dishes for quick access
-- **Dynamic Pricing**: Sale prices and original price display
-- **Preparation Times**: Real-time prep time estimates
+### Color Palette
+- **Olive**: `#5b6f3a` (Primary)
+- **Terracotta**: `#b5543a` (Accent)
+- **Sand**: `#e5d5b5` (Background)
+- **Charcoal**: `#2b2b2b` (Text)
+- **Cream**: `#fff7e6` (Light background)
 
-### 🌍 Multilingual Support
-- **3 Languages**: English, Kurdish (کوردی), Arabic (العربية)
-- **RTL Support**: Full right-to-left layout for Arabic and Kurdish
-- **Cultural Adaptation**: Language-specific content and formatting
+### Typography
+- **Marcellus** - Serif titles (H1-H3)
+- **Inter** - Body text
+- **Noto Naskh Arabic** - Kurdish text (RTL)
 
-### 📱 Modern Features
-- **Real-time Delivery Estimates**: Based on user location
-- **Customer Reviews**: Verified customer testimonials
-- **Social Proof**: Ratings, awards, and recognition badges
-- **Interactive Elements**: Hover effects, animations, and micro-interactions
+### Cultural Elements
+- Kurdish rug pattern borders
+- Diamond ornaments
+- Traditional color scheme
 
-## 🛠️ Technical Features
+## 🏗️ Project Structure
 
-### Frontend
-- **React 18**: Latest React features and hooks
-- **TypeScript**: Type-safe development
-- **Tailwind CSS**: Utility-first styling
-- **Lucide React**: Modern icon library
-- **Responsive Design**: Mobile-first approach
+```
+Nature Village/
+├── app/
+│   ├── layout.tsx          # Root layout with metadata
+│   ├── page.tsx            # Main page
+│   └── globals.css         # Global styles
+├── components/
+│   ├── Nav.tsx             # Navigation with language toggle
+│   ├── Hero.tsx            # Hero section
+│   ├── Featured.tsx        # MenuIQ featured dishes
+│   ├── MenuSection.tsx     # Interactive menu with filters
+│   ├── About.tsx           # Cultural story
+│   ├── Gallery.tsx         # Lightbox gallery
+│   ├── VisitUs.tsx         # Contact & map
+│   ├── Footer.tsx          # Footer with social links
+│   └── LanguageToggle.tsx  # Language switcher
+├── data/
+│   └── menu.ts             # Menu items data
+├── lib/
+│   ├── types.ts            # TypeScript interfaces
+│   └── i18n.ts             # Internationalization utilities
+├── providers/
+│   └── LangProvider.tsx    # Language context provider
+├── utils/
+│   └── menuIQ.ts           # AI menu recommendations
+└── public/
+    └── images/             # Static images
+```
 
-### User Experience
-- **Loading States**: Smooth loading indicators
-- **Error Handling**: Graceful error management
-- **Accessibility**: WCAG compliant design
-- **Performance**: Optimized images and lazy loading
-- **SEO Ready**: Meta tags and structured data
+## 🚀 Getting Started
 
-## 🎨 Design Highlights
+### Prerequisites
+- Node.js 18+ 
+- npm or yarn
 
-### Visual Design
-- **Kurdish Cultural Elements**: Traditional patterns and motifs
-- **Modern Aesthetics**: Clean, professional appearance
-- **Color Psychology**: Warm amber tones representing hospitality
-- **Typography**: Serif fonts for elegance, sans-serif for readability
+### Installation
 
-### Interactive Elements
-- **Hover Effects**: Subtle animations and transitions
-- **Micro-interactions**: Button states and feedback
-- **Smooth Scrolling**: Enhanced navigation experience
-- **Modal Dialogs**: Professional overlay interactions
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/your-username/nature-village.git
+   cd nature-village
+   ```
 
-## 📊 Analytics & Tracking
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
 
-### Customer Insights
-- **Order Analytics**: Track popular dishes and trends
-- **User Behavior**: Monitor interaction patterns
-- **Conversion Tracking**: Measure booking and ordering success
-- **Performance Metrics**: Page load times and user engagement
+3. **Run the development server**
+   ```bash
+   npm run dev
+   ```
 
-## 🔧 Installation & Setup
+4. **Open your browser**
+   Navigate to [http://localhost:3000](http://localhost:3000)
 
+## 📱 Features Overview
+
+### 🌍 Internationalization
+- **Language Toggle**: Switch between English and Kurdish (Sorani)
+- **RTL Support**: Automatic right-to-left layout for Kurdish
+- **Font Switching**: Noto Naskh Arabic for Kurdish text
+- **Local Storage**: Language preference persistence
+
+### 🧠 MenuIQ AI Integration
+- **Time-based Recommendations**: Different suggestions for breakfast, lunch, dinner
+- **Seasonal Adjustments**: Winter hearty dishes, summer light options
+- **Popularity Scoring**: Based on customer preferences
+- **Deterministic Algorithm**: Consistent recommendations
+
+### 🎨 Cultural Design
+- **Kurdish Rug Patterns**: CSS-generated decorative borders
+- **Diamond Ornaments**: Traditional geometric elements
+- **Color Harmony**: Warm, earthy palette inspired by Kurdish culture
+- **Typography Hierarchy**: Marcellus for titles, Inter for body
+
+### ♿ Accessibility
+- **Keyboard Navigation**: Full keyboard support
+- **Screen Reader**: Proper ARIA labels and semantic HTML
+- **Color Contrast**: WCAG AA compliant
+- **Focus Management**: Visible focus indicators
+
+### 📊 Performance
+- **Next.js Image Optimization**: Automatic image optimization
+- **Font Loading**: Optimized Google Fonts loading
+- **Code Splitting**: Automatic route-based code splitting
+- **Lighthouse Score**: > 90 across all metrics
+
+## 🧪 Testing
+
+### MenuIQ Function Tests
+```typescript
+import { getFeaturedDishes, getRecommendedDishes } from '@/utils/menuIQ';
+
+// Test featured dishes
+const featured = getFeaturedDishes(menuItems, 6);
+console.log('Featured dishes:', featured);
+
+// Test recommendations with filters
+const recommendations = getRecommendedDishes(menuItems, { 
+  vegetarian: true, 
+  maxPrice: 20 
+});
+console.log('Vegetarian recommendations:', recommendations);
+```
+
+## 🚀 Deployment
+
+### Vercel (Recommended)
+1. Connect your GitHub repository to Vercel
+2. Vercel will automatically detect Next.js
+3. Deploy with default settings
+
+### Manual Deployment
 ```bash
-# Install dependencies
-npm install
-
-# Run development server
-npm run dev
-
-# Build for production
+# Build the application
 npm run build
 
 # Start production server
 npm start
 ```
 
-## 🌟 Competitive Advantages
+### Environment Variables
+Create a `.env.local` file:
+```env
+NEXT_PUBLIC_GOOGLE_MAPS_API_KEY=your_maps_api_key
+NEXT_PUBLIC_WHATSAPP_NUMBER=+1234567890
+```
 
-### vs. delbaratl.com
-- ✅ More interactive menu with AI recommendations
-- ✅ Advanced search and filtering
-- ✅ Real-time delivery estimates
-- ✅ Multilingual support (3 languages vs 1)
-- ✅ Customer reviews and social proof
-- ✅ Modern, responsive design
+## 📁 File Structure Details
 
-### vs. divanatlanta.com
-- ✅ Enhanced e-commerce functionality
-- ✅ Dynamic pricing and sales
-- ✅ Nutrition and allergen information
-- ✅ Favorites and wishlist features
-- ✅ Better mobile experience
-- ✅ Cultural authenticity with Kurdish elements
+### Core Components
+- **Nav**: Sticky navigation with language toggle
+- **Hero**: Full-screen hero with CTAs
+- **Featured**: MenuIQ-powered dish recommendations
+- **MenuSection**: Interactive menu with search and filters
+- **About**: Cultural story with values
+- **Gallery**: Lightbox gallery with keyboard navigation
+- **VisitUs**: Contact info with Google Maps
+- **Footer**: Social links and language toggle
 
-## 📈 Business Impact
+### Data Management
+- **menu.ts**: 16+ authentic Kurdish dishes
+- **types.ts**: TypeScript interfaces for type safety
+- **i18n.ts**: Language utilities and translations
 
-### Customer Engagement
-- **Increased Time on Site**: Interactive elements keep users engaged
-- **Higher Conversion Rates**: Streamlined ordering process
-- **Better Customer Satisfaction**: Multilingual support and cultural authenticity
-- **Repeat Customers**: Favorites system and personalized experience
+### Utilities
+- **menuIQ.ts**: AI recommendation algorithm
+- **LangProvider.tsx**: React context for language state
 
-### Operational Efficiency
-- **Reduced Order Errors**: Clear menu descriptions and allergen info
-- **Better Inventory Management**: Real-time order tracking
-- **Improved Customer Service**: Integrated reservation system
-- **Data-Driven Decisions**: Analytics and customer insights
+## 🎯 SEO & Performance
 
-## 🚀 Future Enhancements
+### SEO Features
+- **Metadata**: Complete Open Graph and Twitter cards
+- **Schema.org**: LocalBusiness and Menu markup
+- **Sitemap**: Automatic sitemap generation
+- **Robots.txt**: Search engine optimization
 
-### Planned Features
-- **Online Payment Integration**: Stripe/PayPal integration
-- **Loyalty Program**: Points and rewards system
-- **Delivery Tracking**: Real-time order status
-- **AI Chatbot**: Customer service automation
-- **Mobile App**: Native iOS/Android applications
-- **Social Media Integration**: Instagram feed and reviews
+### Performance Optimizations
+- **Image Optimization**: Next.js automatic optimization
+- **Font Loading**: Optimized Google Fonts
+- **Code Splitting**: Route-based code splitting
+- **Bundle Analysis**: Built-in bundle analyzer
 
-### Technical Improvements
-- **PWA Support**: Progressive Web App capabilities
-- **Offline Functionality**: Service worker implementation
-- **Advanced Analytics**: Google Analytics 4 integration
-- **Performance Optimization**: Image optimization and caching
-- **Security Enhancements**: HTTPS and data protection
+## 🔧 Customization
 
-## 📞 Support
+### Adding Menu Items
+Edit `data/menu.ts`:
+```typescript
+{
+  id: 'new-item',
+  name: { en: 'English Name', ckb: 'کوردی ناو' },
+  description: { en: 'Description', ckb: 'وەسف' },
+  price: 15.99,
+  category: 'traditional',
+  tags: ['hearty', 'warm'],
+  popularity: 8.5,
+  image: '/images/new-item.jpg',
+}
+```
 
-For technical support or feature requests, please contact:
-- **Email**: support@naturevillage.com
-- **Phone**: +1 (555) 123-4567
-- **WhatsApp**: +1 (555) 123-4567
+### Customizing Colors
+Edit `tailwind.config.js`:
+```javascript
+colors: {
+  olive: { 600: '#5b6f3a' },
+  terracotta: { 600: '#b5543a' },
+  // Add your custom colors
+}
+```
+
+### Adding Languages
+Edit `lib/i18n.ts`:
+```typescript
+export const languages: Language[] = ['en', 'ckb', 'ar'];
+export const languageNames: Record<Language, string> = {
+  en: 'English',
+  ckb: 'کوردی',
+  ar: 'العربية',
+};
+```
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Add tests if applicable
+5. Submit a pull request
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🙏 Acknowledgments
+
+- **Blunari** - For the MenuIQ AI feature
+- **Kurdish Community** - For cultural inspiration
+- **Next.js Team** - For the amazing framework
+- **Tailwind CSS** - For the utility-first CSS framework
 
 ---
 
-**Nature Village Restaurant** - Bringing authentic Kurdish flavors to your table with modern technology and exceptional service.
-# naturevillage
+**Crafted with ❤️ by Blunari · MenuIQ**
