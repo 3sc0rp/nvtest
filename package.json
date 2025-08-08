@@ -2,7 +2,6 @@
   "name": "nature-village-website",
   "version": "1.0.0",
   "description": "Enhanced Nature Village Kurdish Restaurant Website",
-  "main": "nature-village-website.tsx",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
