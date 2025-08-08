@@ -29,6 +29,7 @@ npm-packages-offline-cache
 dist/
 build/
 out/
+.next/
 
 # Optional: coverage reports
 coverage/
